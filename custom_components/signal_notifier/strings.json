@@ -1,0 +1,47 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configurer Signal Notifier",
+        "data": {
+          "url": "URL de l'API Signal (ex: http://192.168.1.10:8080)",
+          "sender": "Numéro de téléphone expéditeur (format international)",
+          "username": "Nom d'utilisateur (Optionnel)",
+          "password": "Mot de passe (Optionnel)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Échec de connexion",
+      "invalid_auth": "Authentification invalide",
+      "unknown": "Erreur inattendue"
+    },
+    "abort": {
+      "already_configured": "Le compte est déjà configuré"
+    }
+  },
+  "services": {
+    "send_message": {
+      "name": "Envoyer un message Signal",
+      "description": "Envoie un message à un ou plusieurs destinataires via l'API Signal.",
+      "fields": {
+        "message": {
+          "name": "Message",
+          "description": "Le contenu du message à envoyer."
+        },
+        "recipients": {
+          "name": "Destinataires",
+          "description": "Les numéros de téléphone des destinataires, séparés par des points-virgules."
+        },
+        "notify_self": {
+          "name": "S'envoyer à soi-même",
+          "description": "Si activé, le message sera également envoyé au numéro de l'expéditeur."
+        },
+        "text_mode": {
+          "name": "Mode texte",
+          "description": "Définit comment le texte doit être traité. 'styled' permet d'utiliser du formatage (gras, italique, etc.)."
+        }
+      }
+    }
+  }
+}

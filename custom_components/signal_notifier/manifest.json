@@ -1,0 +1,11 @@
+{
+  "domain": "signal_notifier",
+  "name": "Signal Notifier",
+  "documentation": "https://github.com/babeuloula/HA-Signal-notifier",
+  "issue_tracker": "https://github.com/babeuloula/HA-Signal-notifier/issues",
+  "dependencies": [],
+  "codeowners": ["@babeuloula"],
+  "config_flow": true,
+  "iot_class": "local_push",
+  "version": "1.0.0"
+}

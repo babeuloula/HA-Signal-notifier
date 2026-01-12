@@ -1,0 +1,47 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure Signal Notifier",
+        "data": {
+          "url": "Signal API URL (e.g., http://192.168.1.10:8080)",
+          "sender": "Sender phone number (international format)",
+          "username": "Username (Optional)",
+          "password": "Password (Optional)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid authentication",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "Device is already configured"
+    }
+  },
+  "services": {
+    "send_message": {
+      "name": "Send a Signal message",
+      "description": "Sends a message to one or more recipients via the Signal API.",
+      "fields": {
+        "message": {
+          "name": "Message",
+          "description": "The message content to send."
+        },
+        "recipients": {
+          "name": "Recipients",
+          "description": "The phone numbers of the recipients, separated by semicolons."
+        },
+        "notify_self": {
+          "name": "Notify self",
+          "description": "If enabled, the message will also be sent to the sender's own number."
+        },
+        "text_mode": {
+          "name": "Text mode",
+          "description": "Defines how the text should be treated. 'styled' allows for formatting."
+        }
+      }
+    }
+  }
+}

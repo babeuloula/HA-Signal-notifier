@@ -1,0 +1,35 @@
+send_message:
+  name: Envoyer un message Signal
+  description: Envoie un message à un ou plusieurs destinataires via l'API Signal.
+  fields:
+    message:
+      name: Message
+      description: Le contenu du message à envoyer.
+      required: true
+      example: "Bonjour depuis Home Assistant !"
+      selector:
+        text:
+    recipients:
+      name: Destinataires
+      description: Les numéros de téléphone des destinataires, séparés par des points-virgules (format international).
+      required: true
+      example: "+33612345678;+33600000000"
+      selector:
+        text:
+    notify_self:
+      name: S'envoyer à soi-même
+      description: Si activé, le message sera également envoyé au numéro de l'expéditeur.
+      required: false
+      default: false
+      selector:
+        boolean:
+    text_mode:
+      name: Mode texte
+      description: Définit comment le texte doit être traité. 'styled' permet le formatage.
+      required: false
+      default: "styled"
+      selector:
+        select:
+          options:
+            - "normal"
+            - "styled"
