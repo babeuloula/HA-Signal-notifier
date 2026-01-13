@@ -17,15 +17,11 @@ Vous devez disposer d'une instance de [signal-cli-rest-api](https://github.com/b
 
 ### Via HACS (Recommandé)
 
-1. Assurez-vous que [HACS](https://hacs.xyz/) est installé et fonctionnel sur votre instance Home Assistant.
-2. Ouvrez HACS dans Home Assistant.
-3. Cliquez sur les trois points en haut à droite et sélectionnez **Dépôts personnalisés**.
-4. Collez l'URL de ce dépôt : `https://github.com/babeuloula/HA-Signal-notifier`
-5. Sélectionnez la catégorie **Intégration** et cliquez sur **Ajouter**.
-6. Vous devriez maintenant voir "Signal Notifier" dans la liste. Cliquez sur **Télécharger**.
-7. Redémarrez Home Assistant.
+[![Ouvre votre instance Home Assistant et ajoute un dépôt dans la boutique communautaire Home Assistant.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=babeuloula&repository=HA-Signal-notifier&category=integration)
 
-### Installation Manuelle
+Plus d'informations sur HACS [ici](https://hacs.xyz/).
+
+### Manuelle
 
 Si vous ne souhaitez pas utiliser HACS, vous pouvez installer l'intégration manuellement :
 
