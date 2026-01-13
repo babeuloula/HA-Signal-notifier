@@ -63,7 +63,9 @@ C'est la méthode recommandée car elle offre des champs clairs dans l'interface
 ```yaml
 service: signal_notifier.send_message
 data:
-  message: "Bonjour depuis Home Assistant !"
+  message: |
+    Bonjour depuis Home Assistant !
+    Ceci est un message sur plusieurs lignes.
   recipients: "+33612345678;+33600000000"
   notify_self: false
   text_mode: "styled"

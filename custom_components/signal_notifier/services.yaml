@@ -9,6 +9,7 @@ send_message:
       example: "Bonjour depuis Home Assistant !"
       selector:
         text:
+          multiline: true
     recipients:
       name: Destinataires
       description: Les numéros de téléphone des destinataires, séparés par des points-virgules (format international).
@@ -19,14 +20,14 @@ send_message:
     notify_self:
       name: S'envoyer à soi-même
       description: Si activé, le message sera également envoyé au numéro de l'expéditeur.
-      required: false
+      required: true
       default: false
       selector:
         boolean:
     text_mode:
       name: Mode texte
       description: Définit comment le texte doit être traité. 'styled' permet le formatage.
-      required: false
+      required: true
       default: "styled"
       selector:
         select:
