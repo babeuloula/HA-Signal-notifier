@@ -60,7 +60,7 @@ class SignalNotificationService(BaseNotificationService):
         
         # On utilise l'expéditeur global par défaut
         sender = data.get("sender", self._sender)
-        notify_self = data.get("notify_self", False)
+        notify_self = data.get("notify_self", True)
         text_mode = data.get("text_mode", "styled")
         
         await async_send_signal_message(

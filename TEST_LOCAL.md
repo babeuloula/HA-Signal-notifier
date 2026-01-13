@@ -45,7 +45,7 @@ python test_api.py http://192.168.1.10:8080 +33612345678 +33612345678 "Ceci est 
 - `<MESSAGE>` : Le texte du message à envoyer (entre guillemets).
 - `<USERNAME>` (Optionnel) : Le nom d'utilisateur pour le Basic Auth.
 - `<PASSWORD>` (Optionnel) : Le mot de passe pour le Basic Auth.
-- `<NOTIFY_SELF>` (Optionnel, défaut: `false`) : `true` ou `false` pour s'envoyer le message également à soi-même.
+- `<NOTIFY_SELF>` (Optionnel, défaut: `true`) : `true` ou `false` pour s'envoyer le message également à soi-même.
 - `<TEXT_MODE>` (Optionnel, défaut: `styled`) : `normal` ou `styled`. `styled` permet le formatage Signal.
 
 ## Interprétation des résultats

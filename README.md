@@ -56,7 +56,7 @@ C'est la méthode recommandée car elle offre des champs clairs dans l'interface
 **Paramètres :**
 - `message` : Le texte à envoyer.
 - `recipients` : Un ou plusieurs numéros de téléphone séparés par des points-virgules (`;`).
-- `notify_self` : (Optionnel, défaut: `false`) Si `true`, envoie aussi le message à l'expéditeur.
+- `notify_self` : (Optionnel, défaut: `true`) Si `true`, envoie aussi le message à l'expéditeur.
 - `text_mode` : (Optionnel, défaut: `styled`) `normal` ou `styled`. `styled` permet le formatage Signal.
 
 **Exemple YAML :**
@@ -67,7 +67,7 @@ data:
     Bonjour depuis Home Assistant !
     Ceci est un message sur plusieurs lignes.
   recipients: "+33612345678;+33600000000"
-  notify_self: false
+  notify_self: true
   text_mode: "styled"
 ```
 

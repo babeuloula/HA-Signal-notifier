@@ -14,7 +14,7 @@ async def async_send_signal_message(
     recipients: list[str] | str | None = None,
     username: str | None = None,
     password: str | None = None,
-    notify_self: bool = False,
+    notify_self: bool = True,
     text_mode: str = "styled",
 ) -> bool:
     """Send a message via Signal API."""

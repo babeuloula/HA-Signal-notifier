@@ -3,7 +3,7 @@ import aiohttp
 import sys
 import json
 
-async def test_signal(url, sender, recipients, message, username=None, password=None, notify_self=False, text_mode="styled"):
+async def test_signal(url, sender, recipients, message, username=None, password=None, notify_self=True, text_mode="styled"):
     """Simule l'envoi d'un message Signal tel que fait par l'intégration."""
     url = url.rstrip("/")
     endpoint = f"{url}/v2/send"
@@ -70,7 +70,7 @@ if __name__ == "__main__":
     message_arg = sys.argv[4]
     username_arg = sys.argv[5] if len(sys.argv) > 5 else None
     password_arg = sys.argv[6] if len(sys.argv) > 6 else None
-    notify_self_arg = sys.argv[7].lower() == "true" if len(sys.argv) > 7 else False
+    notify_self_arg = sys.argv[7].lower() == "true" if len(sys.argv) > 7 else True
     text_mode_arg = sys.argv[8] if len(sys.argv) > 8 else "styled"
     
     asyncio.run(test_signal(url_arg, sender_arg, recipients_arg, message_arg, username_arg, password_arg, notify_self_arg, text_mode_arg))

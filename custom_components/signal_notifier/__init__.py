@@ -23,7 +23,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
         
         message = call.data.get("message")
         recipients = call.data.get("recipients")
-        notify_self = call.data.get("notify_self", False)
+        notify_self = call.data.get("notify_self", True)
         text_mode = call.data.get("text_mode", "styled")
         
         await async_send_signal_message(

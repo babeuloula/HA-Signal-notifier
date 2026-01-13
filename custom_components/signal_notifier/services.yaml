@@ -21,7 +21,7 @@ send_message:
       name: S'envoyer à soi-même
       description: Si activé, le message sera également envoyé au numéro de l'expéditeur.
       required: true
-      default: false
+      default: true
       selector:
         boolean:
     text_mode:
