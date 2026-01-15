@@ -3,8 +3,8 @@
   "name": "Signal Notifier",
   "codeowners": ["@babeuloula"],
   "config_flow": true,
-  "documentation": "https://github.com/babeuloula/HA-Signal-notifier",
+  "documentation": "https://github.com/babeuloula/ha_signal_notifier",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/babeuloula/HA-Signal-notifier/issues",
+  "issue_tracker": "https://github.com/babeuloula/ha_signal_notifier/issues",
   "version": "1.0.0"
 }
