@@ -4,6 +4,7 @@
   "codeowners": ["@babeuloula"],
   "config_flow": true,
   "documentation": "https://github.com/babeuloula/HA-Signal-notifier",
+  "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/babeuloula/HA-Signal-notifier/issues",
   "version": "1.0.0"
 }
