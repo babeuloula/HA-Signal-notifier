@@ -17,7 +17,7 @@ Vous devez disposer d'une instance de [signal-cli-rest-api](https://github.com/b
 
 ### Via HACS (Recommandé)
 
-[![Ouvre votre instance Home Assistant et ajoute un dépôt dans la boutique communautaire Home Assistant.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=babeuloula&repository=HA-Signal-notifier&category=integration)
+[![Ouvre votre instance Home Assistant et ajoute un dépôt dans la boutique communautaire Home Assistant.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=babeuloula&repository=ha_signal_notifier&category=integration)
 
 Plus d'informations sur HACS [ici](https://hacs.xyz/).
 
