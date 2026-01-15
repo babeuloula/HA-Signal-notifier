@@ -1,5 +1,4 @@
 {
   "name": "Signal Notifier",
-  "render_readme": true,
-  "category": "integration"
+  "hide_default_branch": true
 }
